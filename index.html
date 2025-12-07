@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individuell angefertigte Tools & Full-Stack Entwicklung</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            line-height: 1.5;
+            color: #222;
+            background: #fafafa;
+        }
+
+        header {
+            padding: 40px 20px;
+            text-align: center;
+            background: #111;
+            color: #fff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.4rem;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.1rem;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 1.6rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #111;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 10px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+    <style>
+        .faq {
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 2rem;
+        }
+
+        .faq-input {
+            display: none;
+        }
+
+        .faq-label {
+            display: block;
+            cursor: pointer;
+            padding: 1rem 1.25rem;
+            background: #ffffff;
+            border-radius: 0.5rem;
+            border: 1px solid #dddddd;
+            font-weight: 600;
+            line-height: 1.4;
+            position: relative;
+        }
+
+        .faq-label::after {
+            content: "+";
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.1rem;
+        }
+
+        .faq-input:checked+.faq-label::after {
+            content: "-";
+        }
+
+        .faq-label:hover {
+            background: #f0f0f0;
+        }
+
+        .faq-label:focus-visible {
+            outline: 2px solid #000;
+            outline-offset: 3px;
+        }
+
+        .faq-answer {
+            margin-top: -1.5em;
+            padding-top: 1.5em;
+            max-height: 0;
+            overflow: hidden;
+            overflow-y: auto;
+            background: #ffffff;
+            border-radius: 0 0 0.5rem 0.5rem;
+            border: 1px solid #dddddd;
+            border-top: none;
+            padding: 0 1.25rem;
+            transition: max-height 0.25s ease, padding 0.25s ease;
+        }
+
+        .faq-answer>p {
+            margin: 0;
+        }
+
+        .faq-input:checked+.faq-label+.faq-answer {
+            max-height: 400px;
+            padding: 2rem 1.25rem 1rem;
+        }
+    </style>
+    <style>
+        #header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: #000;
+        }
+        #header #navigationbar {
+            height: 64px;
+        }
+        #header #navigationbar a.item {
+            color: white;
+            text-decoration: none;
+            line-height: 64px;
+            padding-left: 32px;
+        }
+        #discount-strip {
+            background-color: #c30000;
+            color: white;
+            text-align: center;
+            padding: 4px 8px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.62);
+        }
+        .shadow {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style>
+    <!-- Christmas Overrides -->
+    <style>
+        section .button,
+        .faq-label,
+        .faq-label:hover,
+        #discount-strip {
+            background-color: #c30000;
+            background-size: 46px 46px;
+            background-image: repeating-linear-gradient(45deg, #066f00 0, #066f00 25%, #c30000 0, #c30000 50%);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.62);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="navigationbar" class="shadow">
+            <a href="/" class="item">
+                <span style="font-weight: lighter;">KIOA</span><span style="font-weight: bolder;">SOFT</span>
+            </a>
+            <a href="/" class="item">
+                Home
+            </a>
+        </div>
+        <div id="discount-strip" class="shadow">
+            <span>Sichern Sie sich jetzt bis zu -50% Rabatt auf alle Projektarten bis zum 31.12.2024! 🎄🎁</span>
+        </div>
+    </div>
+    <header>
+        <h1>Individuell angefertigte Tools & Full-Stack Entwicklung</h1>
+        <p>Maßgeschneiderte Softwarelösungen für Web, APIs, Automationen und vieles mehr.</p>
+        <section>
+            <a class="button" href="/kontakt/">Kontakt aufnehmen</a>
+        </section>
+    </header>
+
+    <section>
+        <h2>Was bieten wir?</h2>
+        <ul>
+            <li>Individuell entwickelte Webseiten, REST-APIs und spezialisierte Tools.</li>
+            <li>Geeignet für Projekte jeder Größe.</li>
+            <li>Änderungen jederzeit während der Entwicklung möglich.</li>
+            <li>Kostenlose Online-Beratung mit unseren Experten.</li>
+            <li>Nur 15% Vorauszahlung für den ersten Prototyp.</li>
+            <li>Ratenzahlung für Projekte schon ab einem Gesamtpreis von 50,- €.</li>
+            <li>Garantierte Lieferzeit nach Vereinbarung.</li>
+            <li>Gesetzlich vorgeschriebene Gewährleistung.</li>
+            <li>Keine versteckten Kosten.</li>
+            <li>Endgültiger Preis laut gemeinsam geschätzten Aufwandsbasis.</li>
+        </ul>
+        <a class="button" href="/kontakt/">Kostenlose Beratung anfragen</a>
+    </section>
+
+    <section>
+        <h2>Wie viel kostet ein Projekt?</h2>
+        <p>
+            Stark abhängig von der Projektkomplexität: 25,- € bis 1800,- €.
+            <br />
+            Wobei das durchschnittliche Projekt selten über 190,- € liegt.
+        </p>
+    </section>
+
+    <section>
+        <h2>Wie läuft ein Projekt ab?</h2>
+        <p>Wir besprechen Anforderungen, erstellen ein klares Konzept und entwickeln danach Prototyp, Finalversion und
+            Feinschliff. Änderungen können jederzeit eingebracht werden.</p>
+    </section>
+
+    <section class="faq">
+        <h2>Häufig gestellte Fragen (FAQ)</h2>
+        <div class="faq-item">
+            <input class="faq-input" type="radio" name="faq" id="q1">
+            <label class="faq-label" for="q1">
+                Wie stelle ich einen Antrag?
+            </label>
+            <div class="faq-answer">
+                <p>
+                    Wir ermöglichen ein Erstgespräch direkt hier im Chat - ohne Registrierung und ohne persönliche Daten.
+                    Alternativ können Sie uns per E-Mail kontaktieren.
+                    Dabei klären Sie mit unseren Expert:innen, was Sie benötigen und wofür Sie es einsetzen wollen.
+                    Wir schätzen den Aufwand ab und erstellen ein Angebot innerhalb Ihres Budgets.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input class="faq-input" type="radio" name="faq" id="q2">
+            <label class="faq-label" for="q2">
+                Bietet ihr Ratenzahlung an?
+            </label>
+            <div class="faq-answer">
+                <p>Schon ab 50,- € Gesamtpreis ist eine Ratenzahlung möglich.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input class="faq-input" type="radio" name="faq" id="q3">
+            <label class="faq-label" for="q3">
+                Ist der Quellcode enthalten?
+            </label>
+            <div class="faq-answer">
+                <p>Quellcode kann auf Wunsch übergeben werden (abhängig von Lizenzierung und
+                    Drittanbieter-Bibliotheken).</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input class="faq-input" type="radio" name="faq" id="q4">
+            <label class="faq-label" for="q4">
+                Ist eine Dokumentation enthalten?
+            </label>
+            <div class="faq-answer">
+                <p>Nach Wunsch wird eine Dokumentation erstellt, um die Nutzung und Wartung von zukünftigen Entwicklern
+                    zu erleichtern.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input class="faq-input" type="radio" name="faq" id="q5">
+            <label class="faq-label" for="q5">
+                Welche Projekte setzen wir um?
+            </label>
+            <div class="faq-answer">
+                <b>
+                    Hier sind einige Beispiele, die wir bereits realisiert haben:
+                </b>
+                <ul>
+                    <li>Websites wie Homepages</li>
+                    <li>Portfolios</li>
+                    <li>Weinanlagen, inklusive Messung von Säuregehalt, Druck und Temperatur</li>
+                    <li>Wasserreinigungs- und Überwachungssysteme für automatischen Wasserwechsel</li>
+                    <li>Web-Apps wie Support-Chats, Anmeldeportale und Administrationstools</li>
+                    <li>REST-APIs für mobile Apps und Webanwendungen</li>
+                    <li>VSCode-Erweiterungen zur Verbesserung der Entwicklerproduktivität</li>
+                </ul>
+                <p>Alles im Preisrahmen von 25,- € bis 150,- €.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Kontakt</h2>
+        <p>Fragen oder Projektwünsche? Einfach melden.</p>
+        <a class="button" href="/kontakt/">Zum Kontaktformular</a>
+    </section>
+
+    <footer>
+        &copy; 2024 KIOASOFT. Alle Rechte vorbehalten.
+    </footer>
+</body>
+
+</html>
