@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            line-height: 1.5;
+            color: #222;
+            background: #fafafa;
+        }
+
+        header {
+            padding: 40px 20px;
+            text-align: center;
+            background: #111;
+            color: #fff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.4rem;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.1rem;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 1.6rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #111;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 10px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+    <style>
+        .faq {
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 2rem;
+        }
+
+        .faq-input {
+            display: none;
+        }
+
+        .faq-label {
+            display: block;
+            cursor: pointer;
+            padding: 1rem 1.25rem;
+            background: #ffffff;
+            border-radius: 0.5rem;
+            border: 1px solid #dddddd;
+            font-weight: 600;
+            line-height: 1.4;
+            position: relative;
+        }
+
+        .faq-label::after {
+            content: "+";
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.1rem;
+        }
+
+        .faq-input:checked+.faq-label::after {
+            content: "-";
+        }
+
+        .faq-label:hover {
+            background: #f0f0f0;
+        }
+
+        .faq-label:focus-visible {
+            outline: 2px solid #000;
+            outline-offset: 3px;
+        }
+
+        .faq-answer {
+            margin-top: -1.5em;
+            padding-top: 1.5em;
+            max-height: 0;
+            overflow: hidden;
+            overflow-y: auto;
+            background: #ffffff;
+            border-radius: 0 0 0.5rem 0.5rem;
+            border: 1px solid #dddddd;
+            border-top: none;
+            padding: 0 1.25rem;
+            transition: max-height 0.25s ease, padding 0.25s ease;
+        }
+
+        .faq-answer>p {
+            margin: 0;
+        }
+
+        .faq-input:checked+.faq-label+.faq-answer {
+            max-height: 400px;
+            padding: 2rem 1.25rem 1rem;
+        }
+    </style>
+    <style>
+        #header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: #000;
+        }
+        #header #navigationbar {
+            height: 64px;
+        }
+        #header #navigationbar a.item {
+            color: white;
+            text-decoration: none;
+            line-height: 64px;
+            padding-left: 32px;
+        }
+        #discount-strip {
+            background-color: #c30000;
+            color: white;
+            text-align: center;
+            padding: 4px 8px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.62);
+        }
+        .shadow {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style>
+    <!-- Christmas Overrides -->
+    <style>
+        section .button,
+        .faq-label,
+        .faq-label:hover,
+        #discount-strip {
+            background-color: #c30000;
+            background-size: 46px 46px;
+            background-image: repeating-linear-gradient(45deg, #066f00 0, #066f00 25%, #c30000 0, #c30000 50%);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.62);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="navigationbar" class="shadow">
+            <a href="/" class="item">
+                <span style="font-weight: lighter;">KIOA</span><span style="font-weight: bolder;">SOFT</span>
+            </a>
+            <a href="/kontakt/" class="item">
+                Kontakt
+            </a>
+        </div>
+    </div>
+    <header>
+        <h1>In gute Hände mit <span style="font-weight: lighter;">KIOA</span><span style="font-weight: bolder;">SOFT</span></h1>
+        <p>In kontakt treten</p>
+    </header>
+
+    <section>
+        <h2>Instant Chatten <span>(Zurzeit nicht verfügbar)</span></h2>
+        <p>Starten Sie ein Erstgespräch direkt hier im Chat - ohne Registrierung und ohne persönliche Daten.</p>
+        <a class="button" href="/kontakt/">Jetzt chatten</a>
+    </section>
+
+    <section>
+        <h2>E-Mail</h2>
+        <p>Schreiben Sie uns eine E-Mail mit Ihren Projektwünschen und wir melden uns zeitnah bei Ihnen.</p>
+        <a class="button" href="mailto:hans.schweh@gmail.com?subject=Beratung&body=Ich möchte ...">In kontakt treten</a>
+    </section>
+
+    <section>
+        <h2>Kontakt</h2>
+        <p>Sie können uns auch über die folgenden Kanäle erreichen:</p>
+        <a href="mailto:hans.schweh@gmail.com?subject=Beratung&body=Ich möchte ...">hans.schweh@gmail.com</a>
+    </section>
+
+    <footer>
+        &copy; 2024 KIOASOFT. Alle Rechte vorbehalten.
+    </footer>
+</body>
+
+</html>
